@@ -1,18 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import {Phone, EnvelopeSimple, MapPin} from 'phosphor-react';
+
+import logo from '../../assets/images/logonav.png';
 
 const Footer = () => {
   return (
     <footer className="bg-secondary-dark text-white pt-12 pb-6 mt-16">
       <div className="container-custom">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-3">
               <div className="flex gap-1">
-                <div className="w-2.5 h-2.5 rounded-full bg-primary-blue"></div>
-                <div className="w-2.5 h-2.5 rounded-full bg-primary-green"></div>
-                <div className="w-2.5 h-2.5 rounded-full bg-primary-yellow"></div>
-                <div className="w-2.5 h-2.5 rounded-full bg-primary-orange"></div>
+                <img src={logo} alt="Pon Nyasani Logo" className='size-16' />
               </div>
               <span className="font-bold text-lg">Pon Nyasani CBO</span>
             </div>
@@ -22,7 +23,7 @@ const Footer = () => {
           
           <div>
             <h4 className="text-primary-yellow font-semibold mb-3">Quick Links</h4>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 text-xs">
               <Link to="/" className="text-gray-300 hover:text-primary-yellow transition-colors">Home</Link>
               <Link to="/about" className="text-gray-300 hover:text-primary-yellow transition-colors">About Us</Link>
               <Link to="/programs" className="text-gray-300 hover:text-primary-yellow transition-colors">Programs</Link>
@@ -33,7 +34,7 @@ const Footer = () => {
           
           <div>
             <h4 className="text-primary-yellow font-semibold mb-3">Our Programs</h4>
-            <div className="flex flex-col gap-2 text-gray-300 text-sm">
+            <div className="flex flex-col gap-2 text-gray-300 text-xs">
               <span>Digital Literacy Training</span>
               <span>Women & Girls Empowerment</span>
               <span>Education Support</span>
@@ -41,13 +42,22 @@ const Footer = () => {
               <span>Community Awareness</span>
             </div>
           </div>
-          
           <div>
             <h4 className="text-primary-yellow font-semibold mb-3">Contact Us</h4>
-            <div className="flex flex-col gap-2 text-gray-300 text-sm">
-              <p>📍 Siaya County, Kenya</p>
-              <p>📧 info@ponnyasani.org</p>
-              <p>📞 +254 700 123 456</p>
+            <div className="flex flex-col gap-2 text-gray-300 text-xs">
+              <p><MapPin className="inline mr-2" /> Siaya County, Kenya</p>
+              <p><EnvelopeSimple className="inline mr-2" /> info@ponnyasani.org</p>
+              <p><Phone className="inline mr-2" /> +254 700 123 456</p>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="text-primary-yellow font-semibold mb-3">Follow Us</h4>
+            <div className="flex flex-col gap-2 text-gray-300 text-xs">
+              <span className=' hover:text-primary-yellow transition-colors cursor-pointer'><FaFacebookF className="inline mr-2" /> Facebook</span>
+              <span className=' hover:text-primary-yellow transition-colors cursor-pointer'><FaTwitter className="inline mr-2" /> Twitter</span>
+              <span className=' hover:text-primary-yellow transition-colors cursor-pointer'><FaInstagram className="inline mr-2" /> Instagram</span>
+              <span className=' hover:text-primary-yellow transition-colors cursor-pointer'><FaLinkedinIn className="inline mr-2" /> LinkedIn</span>
             </div>
           </div>
         </div>

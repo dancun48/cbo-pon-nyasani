@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
+import logo from '../../assets/images/logonav.png'
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -18,6 +20,7 @@ const Navbar = () => {
     { name: 'About', path: '/about' },
     { name: 'Programs', path: '/programs' },
     { name: 'Team', path: '/team' },
+    { name: 'News & Events', path: '/news-events' },
     { name: 'Contact', path: '/contact' },
   ]
 
@@ -28,10 +31,7 @@ const Navbar = () => {
       <div className="container-custom flex justify-between items-center">
         <Link to="/" className="flex items-center gap-3">
           <div className="flex gap-1">
-            <div className="w-2.5 h-2.5 rounded-full bg-primary-blue"></div>
-            <div className="w-2.5 h-2.5 rounded-full bg-primary-green"></div>
-            <div className="w-2.5 h-2.5 rounded-full bg-primary-yellow"></div>
-            <div className="w-2.5 h-2.5 rounded-full bg-primary-orange"></div>
+            <img src={logo} alt="Pon Nyasani Logo" className='size-16' />
           </div>
           <div className="flex flex-col leading-tight">
             <span className="font-extrabold text-primary-blue text-lg">Pon Nyasani</span>
