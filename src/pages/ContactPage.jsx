@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import PageHeader from '../components/common/PageHeader'
+import PageHeader from '../components/common/PageHeader';
+import { MapPin, EnvelopeSimple, Phone } from 'phosphor-react';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' })
@@ -36,30 +37,30 @@ const ContactPage = () => {
               
               <div className="space-y-4 mb-8">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-primary-blue text-lg">📍</div>
+                  <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-primary-blue text-lg"><MapPin /></div>
                   <div>
                     <p className="font-semibold">Location</p>
                     <p className="text-text-gray">Siaya County, Kenya (near Siaya Town)</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-primary-green text-lg">📧</div>
+                  <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-primary-green text-lg"><EnvelopeSimple /></div>
                   <div>
                     <p className="font-semibold">Email</p>
                     <p className="text-text-gray">info@ponnyasani.org</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center text-primary-yellow text-lg">📞</div>
+                  <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center text-primary-yellow text-lg"><Phone /></div>
                   <div>
                     <p className="font-semibold">Phone</p>
-                    <p className="text-text-gray">+254 700 123 456</p>
+                    <p className="text-text-gray">+254 721 391 630</p>
                   </div>
                 </div>
               </div>
               
               <div className="bg-gradient-to-r from-primary-blue to-primary-green rounded-xl p-6 text-white">
-                <h3 className="text-xl font-bold mb-2">🎯 Seeking Funding Partnerships</h3>
+                <h3 className="text-xl font-bold mb-2"> Seeking Funding Partnerships</h3>
                 <p className="mb-3">We are looking for partners to help us establish our ICT Hub and expand our programs.</p>
                 <p className="text-sm opacity-90">Contact us to discuss partnership opportunities and how you can help transform lives in Siaya County.</p>
               </div>

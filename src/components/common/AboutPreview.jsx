@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { FaLaptopCode, FaFemale, FaBook, FaUtensils } from 'react-icons/fa';
 
 const AboutPreview = () => {
   return (
@@ -23,20 +24,20 @@ const AboutPreview = () => {
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-gradient-to-br from-primary-blue to-blue-700 rounded-2xl p-6 text-white text-center">
-              <div className="text-3xl mb-2">💻</div>
+            <div className="bg-gradient-to-br from-primary-blue flex  flex-col items-center to-blue-700 rounded-2xl p-6 text-white text-center">
+              <div className="text-3xl mb-2"><FaLaptopCode /></div>
               <h3 className="font-bold">Digital Literacy</h3>
             </div>
-            <div className="bg-gradient-to-br from-primary-green to-green-700 rounded-2xl p-6 text-white text-center">
-              <div className="text-3xl mb-2">👩‍👧</div>
+            <div className="bg-gradient-to-br from-primary-green flex  flex-col items-center to-green-700 rounded-2xl p-6 text-white text-center">
+              <div className="text-3xl mb-2"><FaFemale /></div>
               <h3 className="font-bold">Women Empowerment</h3>
             </div>
-            <div className="bg-gradient-to-br from-primary-yellow to-yellow-600 rounded-2xl p-6 text-white text-center">
-              <div className="text-3xl mb-2">📚</div>
+            <div className="bg-gradient-to-br from-primary-yellow flex  flex-col items-center to-yellow-600 rounded-2xl p-6 text-white text-center">
+              <div className="text-3xl mb-2"><FaBook /></div>
               <h3 className="font-bold">Education Support</h3>
             </div>
-            <div className="bg-gradient-to-br from-primary-orange to-orange-600 rounded-2xl p-6 text-white text-center">
-              <div className="text-3xl mb-2">🍲</div>
+            <div className="bg-gradient-to-br from-primary-orange flex  flex-col items-center to-orange-600 rounded-2xl p-6 text-white text-center">
+              <div className="text-3xl mb-2"><FaUtensils /></div>
               <h3 className="font-bold">Feeding Program</h3>
             </div>
           </div>

@@ -1,12 +1,13 @@
 import React from 'react'
-import PageHeader from '../components/common/PageHeader'
+import PageHeader from '../components/common/PageHeader';
+import defaultimage from '../assets/images/defaultimage.jpg';
 
 const TeamPage = () => {
   const leaders = [
     { name: "Mr. Martin Akunya", role: "Founder & Director", focus: "Strategic Leadership & Vision", color: "blue", description: "Passionate about community empowerment, youth mentorship, and social development. Leads the organization with a vision for digital transformation in rural communities." },
-    { name: "Jane Akinyi", role: "Programs Coordinator", focus: "Digital Training & ICT Hub", color: "green", description: "Oversees all training programs and ensures quality delivery of digital literacy initiatives." },
-    { name: "Grace Achieng", role: "Women & Youth Lead", focus: "Empowerment & Childcare", color: "orange", description: "Dedicated to supporting teen mothers and young women through mentorship and empowerment programs." },
-    { name: "Peter Omondi", role: "Tech & Infrastructure", focus: "Connectivity & Equipment", color: "yellow", description: "Manages Wi-Fi hotspots and ensures reliable technology infrastructure for all programs." },
+    { name: "Martha Ochiel", role: "Chairperson", focus: "Digital Training & ICT Hub", color: "green", description: "Oversees all training programs and ensures quality delivery of digital literacy initiatives." },
+    { name: "Leon Lumumba", role: "Secretary", focus: "Empowerment & Childcare", color: "orange", description: "Dedicated to supporting teen mothers and young women through mentorship and empowerment programs." },
+    { name: "Caroline Awino", role: "Treasurer", focus: "Connectivity & Equipment", color: "yellow", description: "Manages Wi-Fi hotspots and ensures reliable technology infrastructure for all programs." },
   ]
 
   const members = [
@@ -39,8 +40,8 @@ const TeamPage = () => {
                   ${leader.color === 'yellow' && 'from-primary-yellow to-yellow-500'}
                 `}></div>
                 <div className="p-6 text-center">
-                  <div className="w-24 h-24 rounded-full bg-white shadow-lg mx-auto -mt-12 mb-4 flex items-center justify-center border-4 border-white">
-                    <span className="text-3xl font-bold text-primary-blue">{leader.name.charAt(0)}</span>
+                  <div className=" relative rounded-full shadow-lg mx-auto -mt-1 mb-4 flex items-center justify-center border-4 border-white">
+                    <img src={defaultimage} alt={leader.name} className='absolute rounded-full w-20 h-18 mb-10' />
                   </div>
                   <h3 className="text-xl font-bold mb-1">{leader.name}</h3>
                   <p className="text-primary-blue font-semibold text-sm mb-2">{leader.role}</p>

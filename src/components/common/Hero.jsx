@@ -30,16 +30,16 @@ const Hero = () => {
           
           <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto mt-12">
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold">200+</div>
+              <div className="text-2xl md:text-3xl font-bold">50+</div>
               <div className="text-sm opacity-90">Youth Trained</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold">50+</div>
+              <div className="text-2xl md:text-3xl font-bold">30+</div>
               <div className="text-sm opacity-90">Teen Moms Supported</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold">3</div>
-              <div className="text-sm opacity-90">Wi-Fi Hotspots</div>
+              <div className="text-2xl md:text-3xl font-bold">1</div>
+              <div className="text-sm opacity-90">Wi-Fi Hotspot</div>
             </div>
           </div>
         </div>

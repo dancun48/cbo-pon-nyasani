@@ -1,12 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { FaLaptopCode, FaFemale, FaBook, FaUtensils } from 'react-icons/fa';
 
 const ProgramsPreview = () => {
   const programs = [
-    { title: "Digital Literacy 101", icon: "💻", color: "blue", audience: "Teenagers & Youth" },
-    { title: "Coding & Web Dev", icon: "⌨️", color: "green", audience: "Advanced Youth" },
-    { title: "Teen Mom Empowerment", icon: "👩‍👧", color: "orange", audience: "Teen Mothers" },
-    { title: "Community Feeding", icon: "🍲", color: "yellow", audience: "Vulnerable Groups" },
+    { title: "Digital Literacy 101", icon: <FaBook />, color: "blue", audience: "Teenagers & Youth" },
+    { title: "Coding & Web Dev", icon: <FaLaptopCode />, color: "green", audience: "Advanced Youth" },
+    { title: "Teen Mom Empowerment", icon: <FaFemale />, color: "orange", audience: "Teen Mothers" },
+    { title: "Community Feeding", icon: <FaUtensils />, color: "yellow", audience: "Vulnerable Groups" },
   ]
 
   return (
@@ -19,7 +20,7 @@ const ProgramsPreview = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {programs.map((prog, idx) => (
-            <div key={idx} className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow">
+            <div key={idx} className="bg-white rounded-xl flex  flex-col items-center p-6 text-center shadow-lg hover:shadow-xl transition-shadow">
               <div className={`text-4xl mb-4 ${prog.color === 'blue' && 'text-primary-blue'}
                 ${prog.color === 'green' && 'text-primary-green'}
                 ${prog.color === 'orange' && 'text-primary-orange'}

@@ -2,9 +2,9 @@ import React from 'react'
 
 const ImpactStats = () => {
   const stats = [
-    { number: "250+", label: "Youth Trained in Digital Skills", color: "blue" },
-    { number: "45+", label: "Teen Mothers Enrolled", color: "orange" },
-    { number: "3", label: "Active Wi-Fi Hotspots", color: "green" },
+    { number: "50+", label: "Youth Trained in Digital Skills", color: "blue" },
+    { number: "30+", label: "Teen Mothers Enrolled", color: "orange" },
+    { number: "1", label: "Active Wi-Fi Hotspots", color: "green" },
     { number: "30+", label: "Children in ECE Program", color: "yellow" },
   ]
 

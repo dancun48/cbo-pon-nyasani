@@ -47,7 +47,7 @@ const Footer = () => {
             <div className="flex flex-col gap-2 text-gray-300 text-xs">
               <p><MapPin className="inline mr-2" /> Siaya County, Kenya</p>
               <p><EnvelopeSimple className="inline mr-2" /> info@ponnyasani.org</p>
-              <p><Phone className="inline mr-2" /> +254 700 123 456</p>
+              <p><Phone className="inline mr-2" /> +254 721 391 630</p>
             </div>
           </div>
 
